@@ -13,7 +13,7 @@ module.exports = {
             roleName: 'DJ',
             commands: ['back', 'clear', 'filter', 'loop', 'pause', 'resume', 'seek', 'shuffle', 'skip', 'stop', 'volume']
         },
-        maxVol: 100,
+        maxVol: 10000,
         loopMessage: false,
         discordPlayer: {
             ytdlOptions: {
