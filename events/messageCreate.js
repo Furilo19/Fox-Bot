@@ -17,7 +17,7 @@ module.exports = (client, message) => {
         const roleDJ = message.guild.roles.cache.find(x => x.name === DJ.roleName);
 
         if (!message.member._roles.includes(roleDJ.id)) {
-            return message.channel.send(`This command is reserved for members with the ${DJ.roleName} role on the server ${message.author}... try again ? ❌`);
+            return message.channel.send(`❌${message.author}You do not have Permission to use this Command.❌`);
         }
     }
 
@@ -25,14 +25,14 @@ module.exports = (client, message) => {
         const roleAdmin = message.guild.roles.cache.find(x => x.name === Admin.roleName);
 
         if (!message.member._roles.includes(roleAdmin.id)) {
-            return message.channel.send(`This command is reserved for members with the ${Admin.roleName} role on the server ${message.author}... try again ? ❌`);
+            return message.channel.send(`❌${message.author}You do not have Permission to use this Command.❌`);
         }
     }
 
     if (cmd && cmd.voiceChannel) {
-        if (!message.member.voice.channel) return message.channel.send(`You're not in a voice channel ${message.author}... try again ? ❌`);
+        if (!message.member.voice.channel) return message.channel.send(`You're not in a voice channel ${message.author}.`) 
 
-        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`You are not in the same voice channel ${message.author}... try again ? ❌`);
+        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`You are not in the same voice channel ${message.author}.`);
     }
 
     if (cmd) cmd.execute(client, message, args);

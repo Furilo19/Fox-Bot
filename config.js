@@ -11,12 +11,12 @@ module.exports = {
         DJ: {
             enabled: false,
             roleName: 'DJ',
-            commands: ['back', 'clear', 'filter', 'loop', 'pause', 'resume', 'seek', 'shuffle', 'skip', 'stop', 'volume']
+            commands: ['play', 'back', 'clear', 'filter', 'loop', 'pause', 'resume', 'seek', 'shuffle', 'skip', 'stop', 'volume']
         },
         Admin: {
-            enabled: false,
+            enabled: true,
             roleName: 'Admin',
-            commands: ['kick']
+            commands: ['kick', 'ban']
         },
         maxVol: 10000,
         loopMessage: false,

@@ -26,3 +26,7 @@ player.on('channelEmpty', (queue) => {
 player.on('queueEnd', (queue) => {
     queue.metadata.send('I finished reading the whole queue ✅');
 });
+
+client.on('guildMemberAdd', member => {
+    member.guild.channels.cache.get("926211569799528511").send("Welcome"); 
+});  //Join Message
