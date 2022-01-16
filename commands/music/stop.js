@@ -1,6 +1,7 @@
 module.exports = {
     name: 'stop',
     aliases: ['dc'],
+    description: 'Stops playing music',
     utilisation: '{prefix}stop',
     voiceChannel: true,
 

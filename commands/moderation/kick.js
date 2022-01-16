@@ -3,6 +3,7 @@ const discord = require('discord.js');
 module.exports = {
     name: 'kick',
     aliases: [],
+    description: 'Used to kick Idiots',
     utilisation: '{prefix}kick',
     minArgs: 2,
     expectedArgs: '<user> <reason>',

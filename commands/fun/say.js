@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 module.exports = {
     name: 'say',
     aliases: [],
+    description: 'Repeats your Message',
     utilisation: '{prefix}say',
 
     execute(client, message, args) {

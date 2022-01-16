@@ -3,6 +3,7 @@ const discord = require('discord.js');
 module.exports = {
     name: 'ban',
     aliases: [],
+    description: 'Used to ban Idiots',
     utilisation: '{prefix}ban',
     minArgs: 2,
     expectedArgs: '<user> <reason>',

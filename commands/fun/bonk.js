@@ -3,6 +3,7 @@ const discord = require('discord.js');
 module.exports = {
     name: 'bonk',
     aliases: ['nohorny'],
+    description: 'You know what it does',
     utilisation: '{prefix}bonk',
     minArgs: 1,
     expectedArgs: '<user>',

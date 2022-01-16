@@ -1,6 +1,7 @@
 module.exports = {
     name: 'pause',
     aliases: [],
+    description: 'Pauses current song',
     utilisation: '{prefix}pause',
     voiceChannel: true,
 

@@ -1,6 +1,7 @@
 module.exports = {
     name: 'clear',
     aliases: ['cq'],
+    description: 'Clears the current queue',
     utilisation: '{prefix}clear',
     voiceChannel: true,
 

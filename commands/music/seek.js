@@ -3,6 +3,7 @@ const ms = require('ms');
 module.exports = {
     name: 'seek',
     aliases: [],
+    description: 'Skip to a time in the Song',
     utilisation: '{prefix}seek [time]',
     voiceChannel: true,
 

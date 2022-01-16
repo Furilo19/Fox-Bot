@@ -3,7 +3,8 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
     name: 'help',
     aliases: ['h'],
-    showHelp: false,
+    description: 'Shows all the Commands',
+    showHelp: true,
     utilisation: '{prefix}help',
 
     execute(client, message, args) {
@@ -15,7 +16,7 @@ module.exports = {
         const commands = client.commands.filter(x => x.showHelp !== false);
 
         embed.setDescription('These are all the Commands im going to listen to. Nothing else.');
-        embed.addField(`Music - ${commands.size}`, commands.map(x => `\`${x.name}${x.aliases[0] ? ` (${x.aliases.map(y => y).join(', ')})\`` : '\`'}`).join(' | '));
+        embed.addField(`Commands - ${commands.size}`, commands.map(x => `\`${x.name}${x.aliases[0] ? ` (${x.aliases.map(y => y).join(', ')})\`` : '\`'}  -  ${x.description}`).join(' \n '));
 
         embed.setTimestamp();
         embed.setFooter('Why are you even reading this?', message.author.avatarURL({ dynamic: true }));

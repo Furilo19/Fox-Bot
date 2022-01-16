@@ -3,6 +3,7 @@ const maxVol = client.config.opt.maxVol;
 module.exports = {
     name: 'volume',
     aliases: ['vol'],
+    description: 'Change the volume of the music',
     utilisation: `{prefix}volume [1-${maxVol}]`,
     voiceChannel: true,
 

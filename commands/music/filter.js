@@ -1,6 +1,7 @@
 module.exports = {
     name: 'filter',
     aliases: [],
+    description: 'Enables a Filter',
     utilisation: '{prefix}filter [filter name]',
     voiceChannel: true,
 

@@ -1,6 +1,7 @@
 module.exports = {
     name: 'save',
     aliases: ['sv'],
+    description: 'Sends song name and Author to DMs',
     utilisation: '{prefix}save',
     voiceChannel: true,
 

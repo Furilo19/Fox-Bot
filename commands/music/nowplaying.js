@@ -3,6 +3,7 @@ const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
 module.exports = {
     name: 'nowplaying',
     aliases: ['np'],
+    description: 'Shows wich song is currently playing',
     utilisation: '{prefix}nowplaying',
     voiceChannel: true,
 

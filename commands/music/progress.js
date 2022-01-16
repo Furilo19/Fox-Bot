@@ -1,6 +1,7 @@
 module.exports = {
     name: 'progress',
     aliases: ['pbar'],
+    description: 'Shows at wich time the song is',
     utilisation: '{prefix}progress',
     voiceChannel: true,
 

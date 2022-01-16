@@ -3,6 +3,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
     name: 'queue',
     aliases: ['q'],
+    description: 'Shows the current queue',
     utilisation: '{prefix}queue',
     voiceChannel: true,
 
