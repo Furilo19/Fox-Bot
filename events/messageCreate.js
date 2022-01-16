@@ -11,12 +11,21 @@ module.exports = (client, message) => {
     const cmd = client.commands.get(command) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(command));
 
     const DJ = client.config.opt.DJ;
+    const Admin = client.config.opt.Admin;
 
     if (cmd && DJ.enabled && DJ.commands.includes(cmd.name)) {
         const roleDJ = message.guild.roles.cache.find(x => x.name === DJ.roleName);
 
         if (!message.member._roles.includes(roleDJ.id)) {
             return message.channel.send(`This command is reserved for members with the ${DJ.roleName} role on the server ${message.author}... try again ? ❌`);
+        }
+    }
+
+    if (cmd && Admin.enabled && Admin.commands.includes(cmd.name)) {
+        const roleAdmin = message.guild.roles.cache.find(x => x.name === Admin.roleName);
+
+        if (!message.member._roles.includes(roleAdmin.id)) {
+            return message.channel.send(`This command is reserved for members with the ${Admin.roleName} role on the server ${message.author}... try again ? ❌`);
         }
     }
 

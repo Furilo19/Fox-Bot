@@ -13,6 +13,11 @@ module.exports = {
             roleName: 'DJ',
             commands: ['back', 'clear', 'filter', 'loop', 'pause', 'resume', 'seek', 'shuffle', 'skip', 'stop', 'volume']
         },
+        Admin: {
+            enabled: false,
+            roleName: 'Admin',
+            commands: ['kick']
+        },
         maxVol: 10000,
         loopMessage: false,
         discordPlayer: {
